@@ -1,0 +1,183 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	background-color: #efefef;
+}
+.nav{
+	width: 375px;
+	height: 37px;
+	background-color: #FF852A;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 3px;
+	position: fixed;
+	top: 0px;
+}
+.nav .logo{
+	height: 37px;
+	width: 37px;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-size: 71%;
+	background-position: center;
+	
+}
+.nav .search{
+	display: flex;
+	width: 325px;
+	height: 25px;
+	background: #FF4E22;
+	justify-content: center;
+	align-items:center;
+	font-family: h5index-iconfont;
+	color: #F0E0DC;
+	font-size: 13px;
+	text-decoration: none;
+	
+}
+.search .icon{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-image: url(../img/search.png);
+	background-repeat: no-repeat;
+	background-size: 64%;
+	background-position: center;
+	color: #fff;
+}
+/*广告图的样式*/
+.Item{
+	margin-top: 37px;
+	width: 375px;
+	height: 120px;
+	background-image:url(../img/huxian.webp),url(../img/swiper.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: 0px 113px,0px 0px;
+}
+
+
+/*十个图标的样式实际.iconList>(a.iconItem>(img.icon+span.text))*10*/
+.navlist{
+	widows: 375px;
+	height: 160px;
+	background-color: #FFFFFF;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: space-around;
+}
+.navlist .iconItem{
+	
+	width: 20%;
+	height: 67px;
+	text-decoration: none;
+	font-size: 11px;
+	color: rgb(102, 102, 102);
+	/*text-align: center;*/
+	/*设置弹性布局，方向是竖直*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	
+}
+.navlist .iconItem img{
+	width: 80%;
+	height: auto;
+	
+}
+.iconList .iconItem .text{
+	padding-top: 3px;
+}
+/*头条的样式
+ .tuotiao>(.ttLeft+(.ttMain>(.jpItem>(a.tag+a.text))*2)+.ttRight)
+ * */
+.tuotiao{
+	width: 375px;
+	height: 60px;
+	background-color: #FFFFFF;
+	display: flex;
+
+}
+.tuotiao .ttLeft{
+	width: 60px;
+	height: 60px;
+	background-image: url(../img/taotiao.png);
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.tuotiao .ttMain{
+	width: 232px;
+	height: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 12px;
+}
+.tuotiao .ttMain .jpItem{
+	width: 232px;
+	height: 19px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	
+}
+.ttMain .jpItem .tag{
+	display: flex;
+    width: 28px;
+    height: 13px;
+    font-size: 10.5px;
+    color: rgb(230, 10, 31);
+    border: 1px solid rgb(230, 10, 31);
+    border-radius: 3px;
+    margin-right: 4px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.ttMain .jpItem .text{
+	display: block;
+	width: 200px;
+	height: 19px;
+	color:rgb(51, 51, 51);
+	text-decoration: none;
+	
+	/*溢出隐藏*/
+	overflow: hidden;
+	/*不换行*/
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.tuotiao .ttright{
+	width: 100px;
+	height: 60px;
+	background-image: url(../img/jianbian.png),url(../img/kafei.png);
+	background-size: 100% 100%;
+}
+/*淘抢购.qg>(.qgItem>(.left>.logo+span+.prod)+.right)*4*/
+.qg{
+	width: 375px;
+	height: 224px;
+	background-color: #FFFFFF;
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.qg .qgItem{
+	width: 187.5px;
+	height: 112px;
+	display: flex;
+	border-bottom: 1px solid #efefef;
+}
+.qg .qgItem .left{
+	width: 94px;
+	display: flex;
+	flex-direction: column;
+}
